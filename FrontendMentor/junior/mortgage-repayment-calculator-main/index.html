@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+    <link rel = "stylesheet" href = "assets/style.css"/>
+    <script src="./assets/script.js"></script>
+  </head>
+  <body>
+
+    <div class = "container">
+
+      <form id = "my-form" onsubmit="submithandler()">
+
+        <div id = "form-header">
+          <h2>Mortgage Calculator</h2>
+          <input type="reset" value="Clear All">
+        </div>
+
+        <div id="first">
+          <label for = "mortgage_amount">Mortgage Amount</label>
+          <input type = "number" id="mortgage_amount" name="mortgage_amount" placeholder="Enter Amount in bounds" min="50000" max="1000000" required/>
+        </div>
+        
+        <div id="box">
+
+          <div id="second">
+            <label for="mortgage_term">Mortgage Term</label>
+            <input type ="number" id="mortgage_term" name="mortgage_term" placeholder="Enter Term in years" min="5" max="40" required/>
+          </div>
+
+          <div id="third">
+            <label for="interest_rate">Interest Rate</label>
+            <input type="number" id="interest_rate" name="interest_rate" placeholder="Enter Interest percentage" min="1" max="10" step="0.01" required/>
+          </div>
+
+        </div>
+
+        <div id="box2">
+
+          <label>Mortgage Type</label>
+
+          <div id="fourth">
+            <input type="radio" id="repayment" name="mortgage_type"  required/>
+            <label for="repayment">Repayment</label>
+          </div>
+
+          <div id="fifth">
+            <input type="radio" id="interest_only" name="mortgage_type"  required/>
+            <label for="interest_only">Interest Only</label>
+          </div>
+
+        </div>
+
+        <div id="button">
+          <img src="./assets/images/icon-calculator.svg" alt="calc icon"/>
+          <input type="submit" id="sub" value="Calculate Repayments">
+        </div>
+
+      </form>
+      
+      <div class = "display-box">
+
+        <div id="text-box">
+          <h2>Your results</h2>
+          <p class="description">
+            Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments”.
+          </p>
+        </div>
+
+        <div id="output-box">
+
+          <div id="monthly-repayments">
+            <p class="description">Your monthly repayments</p>
+            <p id="monthly">waiting for input</p>
+          </div>
+
+          <div id="total-repayments">
+            <p class="description">Total you'll repay over the term</p>
+            <p id="total">waiting for input</p>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Youssef Halawa</a>.
+    </footer>
+  </body>
+</html>

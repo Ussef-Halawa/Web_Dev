@@ -1,0 +1,227 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width:100%;
+    min-height: 100vh;
+    background-color: hsl(199, 81%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#my-form{
+    width:100%;
+    height: 60vh;
+    background-color: hsl(0, 0%, 100%);
+    padding-left:5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    
+}
+#form-header{
+    display: flex;
+    gap:40%;
+}
+#form-header h3{
+    color:hsl(199, 25%, 15%);
+}
+#form-header input{
+    
+    color:hsl(198, 7%, 46%);
+    background-color: white;
+    border:none;
+    text-decoration: underline;
+} 
+#form-header input:hover{  
+    color:hsl(201, 54%, 16%);
+
+} 
+#form-header input:active{  
+    color:hsl(198, 7%, 46%);
+}
+#first{
+    display: flex;
+    flex-direction: column;
+}
+#first label{
+    color:hsl(198, 7%, 46%);
+    margin-bottom: 1%;
+}
+#first input{
+    width:80%;
+    height: 3vh;
+    border:3px solid hsl(198, 7%, 46%);
+}
+#first input:hover{
+    border:3px solid hsl(63, 70%, 51%);
+}
+#box{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color:hsl(198, 7%, 46%);
+    flex-direction: row;
+    gap: 20%;
+}
+#second{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#second input{
+    width: 100%;
+    height: 3vh;
+    border: 3px solid hsl(198, 7%, 46%);
+    margin-top: 2%;
+}
+#second input:hover{
+    border: 3px solid hsl(63, 70%, 51%);
+}
+#third{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#third input{
+    height: 3vh;
+    width: 100%;
+    border: 3px solid hsl(198, 7%, 46%);
+    margin-top: 2%;
+}
+#third input:hover{
+    border: 3px solid hsl(63, 70%, 51%);
+}
+#box2{
+    display: flex;
+    width: 80%;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+}
+#box2 label{
+    color: hsl(198, 7%, 46%) ;
+}
+#fourth{
+    display: flex;
+    width:100%;
+    height: 4vh;
+    border: 3px solid hsl(198, 7%, 46%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+}
+#fourth:hover{
+    background-color: hsl(60, 72%, 93%);
+    border: 3px solid hsl(63, 70%, 51%);
+
+}
+#fourth label{
+    color: hsl(201, 54%, 16%);
+}
+#fifth{
+    display: flex;
+    width:100%;
+    height: 4vh;
+    border: 3px solid hsl(198, 7%, 46%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+}
+#fifth:hover{
+    background-color: hsl(60, 72%, 93%);
+    border: 3px solid hsl(63, 70%, 51%);
+
+}
+#fifth label{
+    color: hsl(201, 54%, 16%);
+}
+#button{
+    display: flex;
+    width:50%;
+    height: 3vh;
+    border-radius: 20px;
+    background-color: hsl(61, 70%, 52%);
+    align-content: center;
+    justify-content: center;
+}
+#button:hover{
+    background-color:hsl(60, 72%, 93%);
+}
+#button:active{
+    background-color:hsl(61, 70%, 52%);
+}
+#button input:hover{
+    background-color:hsl(60, 72%, 93%);
+}
+#button input:active{
+    background-color:hsl(61, 70%, 52%);
+}
+#button input{
+    width: 100%;
+    height: 3vh;
+    background-color:hsl(61, 70%, 52%) ;
+    border:none;
+    border-radius: 20px;
+    color: hsl(201, 54%, 16%);
+    font-weight: bold;
+    font-size: 18px;
+}
+#button img{
+    width: 24px;
+    padding-left: 10px;
+}
+.display-box{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    background-color: hsl(201, 54%, 16%);
+    padding: 20px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    flex-direction: column;
+}
+#text-box{
+    color:white;
+}
+#output-box{
+    margin: 5%;
+    width: 80%;
+    height:35vh;
+    background-color: hsl(202, 56%, 12%);
+    border-radius: 5px;
+    border-top: 5px solid hsl(66, 64%, 62%) ;
+}
+#monthly-repayments{
+    border-bottom: 2px solid hsl(202, 35%, 19%);
+    margin: 20px;
+    height: 15vh;
+}
+.description{
+    color: hsl(202, 25%, 70%);
+    font-weight: lighter;
+}
+#monthly{
+    color:hsl(61, 68%, 53%);
+    font-size: 32px;
+}
+#total-repayments{
+    margin: 20px;
+    height: 10vh;
+}
+#total{
+    color:white;
+    font-size: 18px;
+}
